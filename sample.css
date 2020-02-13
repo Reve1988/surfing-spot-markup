@@ -1,0 +1,104 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+
+html {
+	background: url(bg.jpg) no-repeat center center fixed;
+	/*background: url(map.png) no-repeat center center fixed;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.navbar {
+	border-bottom: 2px solid #64d8ff;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+	color: #303030;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #adadad;
+}
+
+.underline-input,
+.underline-input:focus {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #303030;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+	color: #303030;
+}
+
+.underline-input:focus {
+	border-bottom: 1px solid #64d8ff;
+	transition: border-bottom ease .5s 0s;
+}
+
+.form-control::placeholder {
+	color: #adadad;
+}
+
+.underline-input:focus::placeholder {
+	color: #64d8ff;
+	transition: color ease .5s 0s;
+}
+
+.container-fluid {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	padding-top: 100px;
+}
+
+.row {
+	height: 100%;
+}
+
+.col-sm {
+	height: 100%;
+}
+
+.thumbnail-wrappper {
+	width: 25%;
+}
+
+.thumbnail {
+	position: relative;
+	padding-top: 100%; /* 1:1 ratio */
+	overflow: hidden;
+}
+
+.thumbnail .centered {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transform: translate(50%, 50%);
+	-ms-transform: translate(50%, 50%);
+	transform: translate(50%, 50%);
+}
+
+.thumbnail .centered img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	height: auto;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
