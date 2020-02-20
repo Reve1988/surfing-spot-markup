@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
-	<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon.png">
+	<link href="imgs/favicon.png" rel="icon" sizes="16x16" type="image/png">
 
 	<!-- Bootstrap CSS -->
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -17,11 +17,11 @@
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
 	<a class="navbar-brand" href="#">
-		<img src="imgs/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		<img alt="" class="d-inline-block align-top" height="30" src="imgs/logo.png" width="30">
 		Surfing Spot
 	</a>
 	<!--	<a class="navbar-brand" href="#">Surfing Spot</a>-->
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
@@ -35,15 +35,15 @@
 			</li>
 		</ul>
 		<form class="nav-form-lg my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="search">
 		</form>
 	</div>
 </nav>
 
-<div class="container-fluid content-container">
-	<div class="row">
-		<div class="col-lg-7 col-map" style="background-image: url('map.png');">
-		</div>
+<div class="test"></div>
+
+<div class="container-fluid content-container height-100">
+	<div class="row height-100">
 		<div class="col-lg-5 col-list">
 
 			<div class="card mb-3">
@@ -125,7 +125,8 @@
 					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				</div>
 			</div>
-
+		</div>
+		<div class="col-lg-7 col-map" style="background-image: url('map.png');">
 		</div>
 	</div>
 </div>
